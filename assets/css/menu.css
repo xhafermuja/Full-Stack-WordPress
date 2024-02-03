@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+div#overlay-register , div#overlay-login {
+  z-index: 1;
+}
+
+.header {
+  background: linear-gradient(90deg, #043c62 0%, #6ea5d8 100%);
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+.header-banner {
+  /* height: 500px; */
+}
+.header404 {
+  background: #232a3f;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  padding: 0 5rem 0;
+}
+.topnav {
+  /* margin-top: 10px; */
+  display:flex;
+  padding: 0 5rem 0;
+  padding-top: 7px;
+}
+.fixed-header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 0 5rem 0;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: 1;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.header-logo{
+  width:25%;
+}
+.menu-header-navbar-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+ #menu-header-navbar {
+  display: flex;
+  width: 85%; 
+  justify-content: space-evenly;
+  align-items: center;
+} 
+
+li.menu-item{
+  list-style:none;
+  color: white;
+  font-size: 18px;
+}
+/* li.menu-item.text-black{
+  color: black;
+} */
+.register-login-btn  {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  border:none;
+}
+.loginBtn a{
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.registerBtn{
+  background-color: #799f28;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.topnav button.icon {
+  background: transparent;
+  float: right;
+  display: none;
+  padding: 12px 17px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.menu-container {
+  width: 75%;
+  display: flex;
+}
+.banner {
+  position: sticky;
+  display: flex;
+  padding-bottom: 80px;
+  padding: 0 5rem 0;
+  gap: 8rem;
+  /* padding-top: 60px; */
+}
+.search-input {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  align-items: center;
+}
+
+input#search {
+  width: 60%;
+  background-color: transparent;
+  border: 3px solid black;
+  margin-right: 50px;
+  transition: 1.2s;
+  height: 50px;
+}
+::placeholder{
+  color: black;
+  opacity: 1;
+}
+input#search:hover {
+  border-radius: 10px;
+}
+
+.first-banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.search-talents {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+.search-box {
+  width: 80%;
+  display: flex;
+}
+
+.input-search {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+  outline: none;
+}
+button.searchBtn {
+  text-align: center;
+  height: 51px;
+  width: 20%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  outline: none;
+  border-left: 2px solid transparent;
+  background-color: #799f28;
+  color: white;
+}
+h2.search-title {
+  color: white;
+  font-size: 25px;
+}
+@media(max-width:1439px){
+  .header-logo{
+    width: 20%;
+    height: 20%;
+  }
+  .header #menu{
+    width: 80%;
+  }
+  .menu-item a{
+    font-size: 16px;
+  }
+  .loginBtn a , .registerBtn a{
+    font-size: 16px;
+  }
+  .registerBtn{
+    width: 100px;
+  }
+  h2.search-title{
+    font-size: 20px;
+  }
+  .search-talents{
+    width: 45%;
+  }
+  .search-box{
+    width: 100%;
+  }
+  .input-search{
+    width: 70%;
+  }
+  button.searchBtn{
+    width: 30%;
+  }
+  .menu-container {
+    width: 80%;
+  }
+}
+@media(max-width:1065px){
+  .register-login-btn{
+    width: 20%;
+  }
+  .menu-header-navbar-container{
+    width: 70%;
+  }
+  .register-login-btn{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header{
+    padding: 0;
+  }
+  .header-logo {
+    width: 40%;
+    padding-top: 1%;
+  }
+  .topnav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem 0;
+    /* margin-top: 0px; */
+  }
+  .topnav li a, .topnav .register-login-btn{
+    display: none;
+  }
+  .topnav button.icon {
+    background: transparent;
+    float: right;
+    display: block;
+    padding: 12px 17px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  button.icon:focus, button.icon:hover {
+    border: 0;
+    outline: none;
+  }
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.815);
+  }
+  .fixed-header{
+    position: relative;
+    background-color: transparent;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 3rem;
+  }
+  .menu-header-navbar-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  #menu-header-navbar {
+    gap: 1rem;
+  }
+  ul.menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .register-login-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .registerBtn {
+    padding: 0;
+    width: 150px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .register-login-btn {
+    float: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-banner {
+    width: 67%;
+  }
+  .search-talents{
+    padding: 0 5rem 0;
+    margin-top: 5%;
+  }
+  .search-talents{
+    width: 80%;
+  }
+}
+@media (max-width:768px) {
+  .header-logo{
+    width: 60%;
+  }
+  .topnav{
+    padding: 0 1rem 0;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .img-banner{
+    width: 100%;
+  }
+  .search-talents{
+    padding: 0 2rem 0;
+  }
+  .search-talents{
+    width: 100%;
+  }
+  .search-box{
+    width: 100%;
+  }
+  .input-search{
+    width: 70%;
+  }
+  button.searchBtn{
+    width: 30%;
+  }
+}
+
+@media (max-width:494px) {
+  .search-talents{
+    padding: 0;
+  }
+}

@@ -1,0 +1,213 @@
+img.attachment-large.size-large.wp-post-image {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+#nav_menu-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about-us{
+    background-image: url(../img/AboutUsImages/triangle1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+p{
+    display:grid;
+
+}
+.wpcf7-form-control{
+    margin:1.2rem 0;
+}
+
+.wpcf7-form-control{
+    border:1px solid rgba(255, 255, 255, 0);
+    border-radius:2rem;
+    padding:10px;
+    width:85%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#s-btn{
+    width:10rem;
+    justify-self:center;
+    background-color:#799F28;
+    color:white;
+    cursor:pointer;
+}
+#s-btn:hover{
+    background-color:green;
+}
+.wpcf7-textarea{
+    resize:none;
+    color: #a9a3af;
+}
+@media(max-width:1280px){
+    .wpcf7-form-control{
+        width: 95%;
+    }
+}
+@media(max-width:1023px){
+    .wpcf7-form-control{
+        width: 80%;
+    }
+}
+@media(max-width:731px){
+    .wpcf7-form-control{
+        width: 100%;
+    }
+}
+.hr-company-card {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(3 105 161), rgba(0, 0, 0, 0));
+    margin-top: 10px;
+}
+.programming-languages {
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+}
+.programming-languages .language-wrapper {
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.programming-languages .language:first-child {
+    margin-left: 0px;
+}
+.programming-languages .language {
+    border-radius: 10px;
+    min-width: 200px;
+    background: rgb(192, 192, 192);
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+/* width */
+.programming-languages::-webkit-scrollbar {
+    height: 8px;
+}
+/* Track */
+.programming-languages::-webkit-scrollbar-track {
+    background-color: rgb(148, 148, 148);
+}
+/* Handle */
+.programming-languages::-webkit-scrollbar-thumb {
+    background: rgb(56, 56, 56);
+    border-radius: 8px;
+}
+/* Handle on hover */
+.programming-languages::-webkit-scrollbar-thumb:hover {
+    background: darkblue;
+}
+
+
+
+.cards-company {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    perspective: 1000px;
+}
+.company {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    perspective: 1000px;
+}  
+.company-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}  
+.cards-company:hover .company-card {
+    transform: rotateY(180deg);
+}  
+.side.front, .side.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}  
+.side.front {
+    color: black;
+}  
+.side.back {
+    transform: rotateY(180deg);
+}
+
+.file-attachment {
+    background-color: white;
+    box-shadow: rgb(149 157 165 / 20%) 0px 5px 3px;
+    border-radius: 15px;
+    border: 1px solid #ebebea;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 3.7%;
+}
+#wpcf7-f748-o1 {
+    margin-left: 19%;
+    width: 80%;
+}
+.apply-message, .apply-name,
+.apply-email,.apply-file,.company-email
+{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    box-shadow: rgb(77 78 80 / 20%) 0px 4px 4px;
+    background-color: #efefef;
+    outline: none;
+}
+.apply-message{
+    height: 120px;
+}
+input.apply-button {
+    background-color: #c084fc;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 10px;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+}
+.wpcf7 form .wpcf7-response-output {
+    padding: 0.2em 1em;
+    border: 2px solid #000000;
+    width: 80%;
+    color: #000000;
+    margin: 0;
+}
+
+/* SKILL BAR */
+.bar{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(184, 184, 184);
+    position: relative;
+    border-radius: 10px;
+
+}
+.blackBar{
+    background-color: #c084fc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 10px;
+}
